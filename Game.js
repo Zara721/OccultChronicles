@@ -19,9 +19,7 @@ class Game {
             const elapsedTime = now - lastFrameTime;
         
             if (elapsedTime >= targetFrameTime) {
-            // Update game logic
-            this.update();
-        
+
             // Draw game objects
             this.render();
         
@@ -33,10 +31,6 @@ class Game {
         
         loop();
     }
-
-    update() {
-
-      }
       
     render() {
         this.ctx.imageSmoothingEnabled = false;
@@ -62,6 +56,7 @@ class Game {
     }
 
     musicOn() {
+        //listens for event from the Settings class that allows the user totoggle music on or off
         document.addEventListener("musicOn", e => {
             if(!this.musicPlaying) {
                 this.bgMusic.loop();

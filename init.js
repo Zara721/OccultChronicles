@@ -1,3 +1,4 @@
+//the funtion to start of the game
 (function () {
 
     const game = new Game({

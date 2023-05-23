@@ -66,11 +66,13 @@ class GameState {
         
     }
 
+    //advances the game to the next week
     nextWeek() {
       this.week++;
       utils.emitEvent("nextWeek");
     }
 
+    // changes the specified resource by the given amount and emits a "resourceStateChange" event
     changeResource(resource, amount) {
       if (this.resources[resource] + amount >= 0) {
         const sign = amount >= 0 ? 'income' : 'expense';
@@ -85,10 +87,12 @@ class GameState {
       }
     }
 
+    // updates the associated dialogue node for the specified character
     updateDialogueNode(character, newNode) {
       this.dialogueNodes[character] = newNode;
     }
 
+    // updates the relationship status for the specified society 
     updateRelations(society, relationshipStatus) {
       if (this.allies.hasOwnProperty(society)) {
         this.allies[society] = relationshipStatus;
@@ -96,11 +100,13 @@ class GameState {
       }
     }
 
+    //adds item to inventory
     addItem(itemId) {
       this.inventory.push(itemId);
       utils.emitEvent("InventoryStateChange");
     }
   
+    //removes item from inventory
     removeItem(itemId) {
       const itemIndex = this.inventory.indexOf(itemId);
   
@@ -110,10 +116,12 @@ class GameState {
       }
     }
 
+    //adds ending to the ending array to be shown at end of the game
     pushEnding(ending) {
       this.endings.push(ending);
     }
 
+    //shows a warning for when the player doesn't have enough resources for an option
     displayWarning() {
       const warning = document.createElement('div');
       warning.classList.add('ResourceWarning');

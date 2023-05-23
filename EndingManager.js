@@ -5,7 +5,8 @@ class EndingManager {
         this.onComplete = config.onComplete;
         this.element = null;
     }
-  
+    
+    //makes the elements needed to show the endings
     createElement() {
         this.element = document.createElement('div');
         this.element.classList.add('EndingManager');
@@ -14,19 +15,22 @@ class EndingManager {
             <div class="EndingManager_image"></div>
             <div class="EndingManager_text"></div>
         `;
-  
+        
+        //on click show the next ending
         this.element.addEventListener('click', () => {
             this.showNextEnding();
         });
     }
 
+    //removes any images still on the screen
     clearImage() {
         const imageElement = this.element.querySelector('.EndingManager_image');
         while (imageElement.firstChild) {
             imageElement.removeChild(imageElement.firstChild);
         }
     }
-      
+    
+    //shows specific ending with associated text or image
     showEnding(endingText, endingSrc) {
         const textElement = this.element.querySelector('.EndingManager_text');
         const imageElement = this.element.querySelector('.EndingManager_image');
@@ -67,6 +71,7 @@ class EndingManager {
             }
     }
 
+    //shows the final thanks for playing screen
     showThanksForPlaying() {
         const textElement = this.element.querySelector('.EndingManager_text');
         textElement.innerHTML = 'Thanks For Playing!';

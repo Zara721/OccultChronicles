@@ -7,9 +7,11 @@ class Allies {
       document.body.appendChild(this.element);
     }
   
+    // show the realtionship information for each society
     render() {
         this.element.innerHTML = '';
-      
+
+        // Loop through all societies in the gameState
         for (const [society, relationship] of Object.entries(window.gameState.allies)) {
           const entry = document.createElement('div');
           entry.classList.add('society-entry', society.toLowerCase());
@@ -20,7 +22,8 @@ class Allies {
           this.element.appendChild(entry);
         }
       }
-      
+    
+    // returns the leader's name for a given society
     getLeaderName(society) {
         switch (society) {
           case 'Pracepta':
@@ -34,6 +37,7 @@ class Allies {
         }
     }
 
+    // returns the color for a given society
     getSocietyColor(society) {
         switch (society) {
           case 'Pracepta':
@@ -55,7 +59,8 @@ class Allies {
     hide() {
         this.element.style.display = 'none';
     }
-  
+    
+    // initializes event listeners for showing and hiding the allies element
     init() {
         const canvas = document.querySelector(".game-canvas");
         canvas.addEventListener('click', (event) => {
