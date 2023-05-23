@@ -1,4 +1,5 @@
 const utils = {  
+    //waits for a specified time (in miliseconds) before resolving the promise make a time stop gap
     wait(ms) {
       return new Promise(resolve => {
         setTimeout(() => {
@@ -7,14 +8,17 @@ const utils = {
       })
     },
 
+    //returns a random element from an array
     randomFromArray(array) {
       return array[ Math.floor(Math.random()*array.length) ]
     },
 
+    //returns a random interger from a range on min-max numbers
     getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     },
     
+    // returns an array of unique random keys from an object, based on the specified count and start index
     getRandomKeys(obj, count, startIndex = 0) {
       const keys = Object.keys(obj);
       const result = [];
@@ -26,6 +30,7 @@ const utils = {
       return result;
     },
     
+    //emits a custom event with specified name and detal
     emitEvent(name, detail) {
       const event = new CustomEvent(name, {
             detail
@@ -88,6 +93,7 @@ const utils = {
     });
   },
 
+  // filters characters based on the week and dialogue nodes
   filterCharactersByWeekAndDialogueNodes(week, configCharacters) {
     const gameStateNames = Object.keys(window.gameState.dialogueNodes);
   
@@ -107,6 +113,7 @@ const utils = {
     }
   },
 
+  // checks if all character dialogue nodes are null
   allCharacterNodesAreNull() {
     return Object.values(window.gameState.dialogueNodes).every(node => node === null);
   } 
