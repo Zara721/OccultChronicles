@@ -84,7 +84,7 @@ class Game {
         // Remove the TitleScreen
         this.titleScreen.close();
 
-        // window.gameState.endingManager.init(document.querySelector('.game-container'));
+        window.gameState.endingManager.init(document.querySelector('.game-container'));
 
         this.map = new GameMap(window.GameMaps.GameScreen);
         this.map.spawnCharacters();
