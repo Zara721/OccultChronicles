@@ -96,7 +96,7 @@ class GameMap {
         }
         
         if (week == 1) {
-            utils.emitEvent("rulesShow")
+            utils.emitEvent("rulesShow");
         }
     }
 

@@ -29,17 +29,29 @@
   #settings .music-settings .music-button {
     margin-right: 5px;
     padding: 5px 10px;
-    background-color: #d1c3d1;
-    color: #312d31;
+    background-color: #272127;
+    color: #d1c3d1;
     border: none;
     cursor: pointer;
     font-family: 'Poppins';
     font-size: 14px;
   }
-  
-  #settings .music-settings .music-button.off {
-    background-color: #272127;
-    color: #d1c3d1;
-    border: 1px solid #272127;
+
+  #settings .music-settings .music-button.active {
+    background-color: #d1c3d1;
+    color: #312d31;
   }
+
+  #settings .how-to-play-button {
+  padding: 5px 10px;
+  background-color: #d1c3d1;
+  color: #312d31;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
   

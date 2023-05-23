@@ -14,7 +14,7 @@ class Rules {
         <h2>Buttons</h2>
         <p>Clicking on the Allies button will allow you to check your Domains relationship with 
         other societies. The Ledger button will show the expenses and income for each week. 
-        The Settings buttons allow you to toggle music on and off.</p>
+        The Settings buttons allow you to toggle music on and off and refer back to the How to Play rules.</p>
         <h2>Character Interaction</h2>
         <p>You can call a character to the throne by clicking on that character. 
         Then you can click on the speech box to see the following character dialogue and click 
