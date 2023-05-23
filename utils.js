@@ -26,7 +26,6 @@ const utils = {
       return result;
     },
     
-    
     emitEvent(name, detail) {
       const event = new CustomEvent(name, {
             detail
@@ -54,36 +53,36 @@ const utils = {
 
    moveCharacterToPositionSpeed(character, targetX, speed) {
     return new Promise((resolve) => {
-        // Calculate the distance to move
+        // calculate the distance to move
         const distanceX = targetX - character.x;
 
-        // Set the character's direction and moving progress
+        // set the character's direction and moving progress
         character.movingProgressRemaining = Math.abs(distanceX);
 
-        // Calculate the movement direction (-1 for left, 1 for right)
+        // calculate the movement direction (-1 for left, 1 for right)
         const direction = distanceX > 0 ? 1 : -1;
 
-        // Calculate the time of the last update
+        // calculate the time of the last update
         let lastUpdateTime = Date.now();
 
-        // Resolve the promise when the character reaches the target position
+        // resolve the promise when the character reaches the target position
         const checkPositionInterval = setInterval(() => {
-            // Calculate the elapsed time since the last update
+            // calculate the elapsed time since the last update
             const elapsedTime = Date.now() - lastUpdateTime;
 
-            // Update the character's position based on the speed and elapsed time
+            // update the character's position based on the speed and elapsed time
             character.x += direction * speed * elapsedTime;
 
-            // Check if the character has reached the target position
+            // check if the character has reached the target position
             if ((direction === 1 && character.x >= targetX) || (direction === -1 && character.x <= targetX)) {
-                // Clamp the character's position to the target position
+                // change the character's position to the target position
                 character.x = targetX;
 
                 clearInterval(checkPositionInterval);
                 resolve();
             }
 
-            // Update the last update time
+            // update the last update time
             lastUpdateTime = Date.now();
         }, 50);
     });

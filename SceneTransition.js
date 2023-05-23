@@ -3,11 +3,13 @@ class SceneTransition {
         this.element = null;
     }
 
+    //make transition element
     createElement() {
         this.element = document.createElement("div");
         this.element.classList.add("SceneTransition");
     }
 
+    //fades out and removes transition element
     fadeOut() {
         this.element.classList.add("fade-out");
 
@@ -16,6 +18,7 @@ class SceneTransition {
         }, {once: true})
     }
 
+    //initializes transition and call handles callback
     init(container, callBack) {
         this.createElement();
         container.appendChild(this.element);

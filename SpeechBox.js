@@ -7,26 +7,26 @@ class SpeechBox {
     }
 
     createElement() {
-        // Create the element
+        // create the element
         this.element = document.createElement('div');
         this.element.classList.add("SpeechBox");
         
-        // Set the background image
+        // set the background image
         this.element.style.backgroundImage = `url("images/speechBox.png")`;
 
-        // Add character name and text
+        // add character name and text
         this.element.innerHTML = `
             <h3 class="SpeechBox_character">${this.character}</h3>
             <p class="SpeechBox_text"></p>
         `;
 
-        // Use RevealingText for the typewriter effect
+        // use RevealingText for the typewriter effect
         this.revealingText = new RevealingText({
             element: this.element.querySelector(".SpeechBox_text"),
             text: this.text
         });
 
-        // Add event listener for clicking on the element
+        // add event listener for clicking on the element
         this.element.addEventListener("click", () => {
             this.done();
         });

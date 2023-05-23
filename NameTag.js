@@ -5,7 +5,6 @@ class NameTag {
         this.y = config.y;
         this.ctx = config.ctx;
     }
-
     
     displayName() {
         

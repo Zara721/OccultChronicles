@@ -1,6 +1,7 @@
 class TitleScreen {
     constructor() {}
   
+    // waits for the start button click and resolves the promise
     getOptions() {
         return new Promise((resolve) => {
           const startButton = this.element.querySelector(".StartButton");
@@ -11,7 +12,8 @@ class TitleScreen {
           });
         });
     }
-  
+    
+    // creates the title screen element
     createElement() {
         this.element = document.createElement("div");
         this.element.classList.add("TitleScreen");
@@ -21,11 +23,12 @@ class TitleScreen {
         `;
       }
       
-  
+    // removes the title screen element from the DOM
     close() {
         this.element.remove();
     }
-  
+    
+    // initializes the title screen and waits for the player interaction
     async init(container) {
         this.createElement();
         container.appendChild(this.element);
