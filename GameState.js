@@ -56,6 +56,12 @@ class GameState {
         this.inventoryDisplay = new Inventory();
         this.inventoryDisplay.init();
 
+        // tell the player the rules
+        this.rules = new Rules();
+        this.rulesShow = document.addEventListener("rulesShow", e => {
+          this.rules.show();
+        })
+
         this.endingManager = new EndingManager({
           endings: this.endings,
           onComplete: () => {

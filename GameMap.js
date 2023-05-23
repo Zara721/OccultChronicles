@@ -94,6 +94,10 @@ class GameMap {
             delete this.configCharacters[key];
             });
         }
+        
+        if (week == 1) {
+            utils.emitEvent("rulesShow")
+        }
     }
 
     handleMouseMove(e) {

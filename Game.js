@@ -118,7 +118,7 @@ class Game {
 
         //Kick off the game
         this.startGameLoop();
-
+        
 
 
         // this.map.startCutscene([
