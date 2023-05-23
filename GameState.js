@@ -36,12 +36,12 @@ class GameState {
         }
 
         this.endings = [
-          "betrayal",
-          "lucienInvestigate",
-          "military",
-          "hemlock",
-          "littleWitch",
-          "dianeAlly",
+          // "betrayal",
+          // "lucienInvestigate",
+          // "military",
+          // "hemlock",
+          // "littleWitch",
+          // "dianeAlly",
         ]
 
         this.alliesDisplay = new Allies();
