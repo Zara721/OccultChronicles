@@ -50,6 +50,9 @@ class GameState {
         this.ledger = new Ledger();
         this.ledger.init();
 
+        this.settings = new Settings();
+        this.settings.init();
+
         this.inventoryDisplay = new Inventory();
         this.inventoryDisplay.init();
 

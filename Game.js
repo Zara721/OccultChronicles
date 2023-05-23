@@ -5,6 +5,7 @@ class Game {
         this.ctx = this.canvas.getContext("2d");
         this.map = null;
         this.bgMusic = new Sound("./sound/castleMusic.mp3");
+        this.musicPlaying = true;
     }
 
     startGameLoop() {
@@ -60,6 +61,24 @@ class Game {
 
     }
 
+    musicOn() {
+        document.addEventListener("musicOn", e => {
+            if(!this.musicPlaying) {
+                this.bgMusic.loop();
+                this.musicPlaying = true;
+            }
+        })
+      }
+  
+      musicOff() {
+        document.addEventListener("musicOff", e => {
+            if(this.musicPlaying) {
+                this.bgMusic.stop();
+                this.musicPlaying = false;
+            }
+        })
+    }
+
     async init() {
         const container = document.querySelector(".game-container");
 
@@ -98,6 +117,9 @@ class Game {
         //play background music
         this.bgMusic.loop();
 
+        //Add music togglers
+        this.musicOn();
+        this.musicOff();
 
         //Kick off the game
         this.startGameLoop();

@@ -1,0 +1,45 @@
+#settings {
+    position: fixed;
+    top: 50px;
+    left: 300px;
+    transform: translateX(-50%);
+    background-color: #312d31;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+  }
+  
+  #settings div {
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #d1c3d1;
+  }
+  
+  #settings .music-settings {
+    display: flex;
+    align-items: center;
+  }
+  
+  #settings .music-settings span {
+    margin-right: 10px;
+  }
+  
+  #settings .music-settings .music-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #d1c3d1;
+    color: #312d31;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 14px;
+  }
+  
+  #settings .music-settings .music-button.off {
+    background-color: #312d31;
+    color: #d1c3d1;
+    border: 1px solid #d1c3d1;
+  }
+  
