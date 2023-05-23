@@ -1,0 +1,41 @@
+.TitleScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #130a13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.title-text {
+    font-family: 'Poppins';
+    color: #f5f5f5;
+    font-size: 70px; /* Increase the font size */
+    text-align: center; /* Center the title */
+    margin-top: -50px;
+    transition: font-size 0.5s ease-in-out;
+ }
+
+.TitleScreen.show .title-text {
+    font-size: 96px;
+ }
+
+.StartButton {
+    background-image: linear-gradient(to bottom, #1a051a, #5c0d5c);
+    color: #ecddea;
+    cursor: pointer;
+    padding: 16px 32px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    border-style: none;
+    outline-style: none;
+ }
+
+.StartButton:hover {
+    background-image: linear-gradient(to bottom, #240724, #8c1a9e);
+}

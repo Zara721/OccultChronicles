@@ -1,0 +1,25 @@
+#allies {
+    position: fixed;
+    top: 50px;
+    left: 300px;
+    transform: translateX(-50%);
+    background-color: #312d31;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+  }
+  
+  #allies div {
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #d1c3d1;
+  }
+  
+  #allies .society-entry .society-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  

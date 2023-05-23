@@ -1,0 +1,46 @@
+.SpeechBox {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 208px;
+    height: 112px;
+}
+
+.SpeechBox_character {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.SpeechBox_text {
+    position: absolute;
+    top: 18px; 
+    left: 0;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 13px;
+    line-height: 1.3;
+    color: aliceblue;
+    text-align: left;
+}
+
+.SpeechBox_text span {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.SpeechBox_text span.revealed {
+    opacity: 1;
+}
+

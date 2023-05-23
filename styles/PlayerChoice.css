@@ -1,0 +1,29 @@
+.PlayerChoice {
+  position: absolute;
+  top: 224px;
+  left: 564px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PlayerChoice_button {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 0px;
+  cursor: pointer;
+  width: 200px; 
+  height: 50px; 
+  line-height: 30px; 
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+  
+.PlayerChoice_button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+  

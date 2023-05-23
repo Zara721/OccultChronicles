@@ -1,0 +1,52 @@
+#wealth {
+    position: absolute;
+    top: 85px;
+    right: 100px;
+
+    width: 60px; 
+    text-align: left; 
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #d1c3d1;
+  }
+  
+  #supplies {
+    position: absolute;
+    top: 85px;
+    right: -20px;
+
+    width: 60px; 
+    text-align: left; 
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #d1c3d1;
+  }
+  
+  #golems {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+
+    width: 60px; 
+    text-align: left; 
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #d1c3d1;
+  }
+  
+  #influence {
+    position: absolute;
+    top: 150px;
+    right: -20px;
+
+    width: 60px; 
+    text-align: left; 
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #d1c3d1;
+  }
+  
