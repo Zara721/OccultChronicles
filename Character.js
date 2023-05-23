@@ -7,7 +7,7 @@ class Character {
 
         this.sprite = new Sprite ({
             character: this,
-            src: config.src || "/images/characters/Emery.png",
+            src: config.src || "images/characters/Emery.png",
             spriteHeight: config.spriteHeight || 96
           });
 

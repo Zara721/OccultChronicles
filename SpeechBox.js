@@ -12,7 +12,7 @@ class SpeechBox {
         this.element.classList.add("SpeechBox");
         
         // Set the background image
-        this.element.style.backgroundImage = `url("/images/speechBox.png")`;
+        this.element.style.backgroundImage = `url("images/speechBox.png")`;
 
         // Add character name and text
         this.element.innerHTML = `

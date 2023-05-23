@@ -239,13 +239,13 @@ class GameMap {
 window.GameMaps = {
     GameScreen: {
         gameScreen: true,
-        backgroundSrc: "/images/backgrounds/gameScreen.png",
+        backgroundSrc: "images/backgrounds/gameScreen.png",
         staticCharacters: {
             ThroneQuinn: {
                 name: "Quinn",
                 x: 358,
                 y: 276,
-                src: "/images/characters/Throne_Quinn.png"
+                src: "images/characters/Throne_Quinn.png"
             },
         },
         configCharacters: {
@@ -253,7 +253,7 @@ window.GameMaps = {
             Emery: {
                 name: "Emery",
                 x: 128,
-                src: "/images/characters/Emery.png",
+                src: "images/characters/Emery.png",
                 type: "linear",
                 dialogue: {
                     node1: [
@@ -278,7 +278,7 @@ window.GameMaps = {
             Maxine: {
                 name: "Maxine",
                 x: 80,
-                src: "/images/characters/Maxine.png",
+                src: "images/characters/Maxine.png",
                 type: "linear",
                 dialogue: {
                     node1: [
@@ -309,7 +309,7 @@ window.GameMaps = {
             },
             Lucien: {
                 name: "Lucien",
-                src: "/images/characters/Lucien.png",
+                src: "images/characters/Lucien.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -345,7 +345,7 @@ window.GameMaps = {
             },
             Gaius: {
                 name: "Gaius",
-                src: "/images/characters/Gaius.png",
+                src: "images/characters/Gaius.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -370,7 +370,7 @@ window.GameMaps = {
             },
             Flora: {
                 name: "Flora",
-                src: "/images/characters/Flora.png",
+                src: "images/characters/Flora.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -395,7 +395,7 @@ window.GameMaps = {
             //Potential Allies
             Vincent: {
                 name: "Vincent",
-                src: "/images/characters/Vincent.png",
+                src: "images/characters/Vincent.png",
                 type: "linear",
                 dialogue: {
                     node1: [
@@ -419,7 +419,7 @@ window.GameMaps = {
             },
             Elspeth: {
                 name: "Elspeth",
-                src: "/images/characters/Elspeth.png",
+                src: "images/characters/Elspeth.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -445,7 +445,7 @@ window.GameMaps = {
             },
             Rowan: {
                 name: "Rowan",
-                src: "/images/characters/Rowan.png",
+                src: "images/characters/Rowan.png",
                 y: 356,
                 spriteHeight: 112,
                 type: "linear",
@@ -473,7 +473,7 @@ window.GameMaps = {
             //Head of occult societies
             MadameDiane: {
                 name: "Diane",
-                src: "/images/characters/Madame_Diane.png",
+                src: "images/characters/Madame_Diane.png",
                 type: "linear",
                 dialogue: {
                     node1: [
@@ -498,7 +498,7 @@ window.GameMaps = {
             },
             SirMagnus: {
                 name: "Magnus",
-                src: "/images/characters/Sir_Magnus.png",
+                src: "images/characters/Sir_Magnus.png",
                 type: "linear",
                 dialogue: {
                     node1: [
@@ -527,7 +527,7 @@ window.GameMaps = {
             },
             LadyHawthorne: {
                 name: "Hawthorne",
-                src: "/images/characters/Lady_Hawthorne.png",
+                src: "images/characters/Lady_Hawthorne.png",
                 type: "linear",
                 dialogue: {
                     node1: [
@@ -567,7 +567,7 @@ window.GameMaps = {
             //General NPCs
             Alchemist: {
                 name: "Alchemist",
-                src: "/images/characters/Alchemist.png",
+                src: "images/characters/Alchemist.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -591,7 +591,7 @@ window.GameMaps = {
             },
             Blacksmith: {
                 name: "Blacksmith",
-                src: "/images/characters/Blacksmith.png",
+                src: "images/characters/Blacksmith.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -616,7 +616,7 @@ window.GameMaps = {
             },
             Healer: {
                 name: "Healer",
-                src: "/images/characters/Healer.png",
+                src: "images/characters/Healer.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -640,7 +640,7 @@ window.GameMaps = {
             },
             Merchant: {
                 name: "Merchant",
-                src: "/images/characters/Merchant.png",
+                src: "images/characters/Merchant.png",
                 type: "static",
                 dialogue: {
                     node1: [
@@ -665,18 +665,18 @@ window.GameMaps = {
         }
     },
     MysticCouncil: {
-        backgroundSrc: "/images/backgrounds/mysticCouncil.png",
+        backgroundSrc: "images/backgrounds/mysticCouncil.png",
         configCharacters: {
             Quinn: {
                 name: "Quinn",
-                src: "/images/characters/Quinn.png"
+                src: "images/characters/Quinn.png"
             },
         }
     },
     Bedroom: {
-        backgroundSrc: "/images/backgrounds/sleepChamber.png",
+        backgroundSrc: "images/backgrounds/sleepChamber.png",
     },
     Garden: {
-        backgroundSrc: "/images/backgrounds/herbalGarden.png",
+        backgroundSrc: "images/backgrounds/herbalGarden.png",
     }
 }
